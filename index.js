@@ -284,7 +284,7 @@ for (i = 1; i <= 100; i++) {
         
         /* B. Write a function printCoolthat accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
         */
-        function printCool(name) {
+       /* function printCool(name) {
             return `${name} is cool`;
            }
            console.log(printCool("Captain Reynolds"))
@@ -298,7 +298,7 @@ for (i = 1; i <= 100; i++) {
 
         /* D. Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
         */
-        function isVowel(vowel) {
+       /* function isVowel(vowel) {
            const vowels = ['a', 'e', 'i', 'o', 'u'];
              for (let i = 0; i <= vowels.length; i++) {
                 if (vowels[i] == vowel) {
@@ -311,10 +311,47 @@ for (i = 1; i <= 100; i++) {
             }
         
         console.log(isVowel("b"));
-        // E.
-        // F.
-        // G.
+        */
+        // E. Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+
+        /*    function getTwoLenghts(str1, str2) {
+                
+                return [str1.length, str2.length];
+            }
+            console.log(getTwoLenghts("Hank", "Hippopopalous"));
+        */
+
+        // F. Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+         
+       /* function getMultipleLengths(arrayOfStrings) {
+
+                let newArray = [];
+                for (let i = 0; i < arrayOfStrings.length; i++) {
+                    newArray.push(arrayOfStrings[i].length);
+                }
+                return newArray;        
+        }   
+            console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+        */
+        /* G.
+        function maxOfThree(num1, num2, num3) {
+            let numArray = [];
+            for (let i = )
+            return 
+        }
+        */
         // H.
+       /* function printLongestWord(strArray) {
+            let LongestWord = "";
+            for (let i = 0; i < strArray.length; i++) {
+                if (strArray[i].length > LongestWord.length) {
+                    LongestWord = strArray[i]
+                }
+            }
+            return LongestWord
+        }
+        console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+        */
         //_____________________________________________________________
 
 
@@ -324,14 +361,92 @@ for (i = 1; i <= 100; i++) {
 
         // V. Objects
         // A.
+        //1. Create an object called user.
+        /* 2. Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchasedto an empty array []. Set the other values to whatever you would like.
+
+        let user = {
+            name: Ditto,
+            email: "thegoat@gmail.com",
+            age: 101,
+            purchased: [],
+        }
+        */
+
         // B.
-        // C.
-        // D.
+        /*    1. Our user has changed his or her email address. Without changing the original user object, update the email value to a new email address.
+        */
+       //1.
+       /* let user = {
+            name: Ditto,
+            email: "thegoat@gmail.com",
+            age: 101,
+            purchased: [],
+
+            user: "hiThere@hotmail.com",
+        }
+        */
+        // 2. Our user has had a birthday! Without changing the original userobject, increment the age value using the postfix operator. Hint: age++
+        let age = 0;
+        for (let age = 0; age < age.length; age++);
+
+        // C. Adding keys and values
+        //  1. Without changing the original user object, add a new key location to the object, and give it a value or some-or-other location (a string).
+
+        let user = {
+            name: " ",
+            email: "thegoat@gmail.com",
+            age: 101,
+            purchased: [],
+            email: "hiThere@hotmail.com",
+            location: "Pittsburgh, PA",
+
+        }
+        console.log(user);
+
+        // D. Shopaholic
+           user.purchased.push("carbohydrates");
+            user.purchased.push("piece of mind");
+            user.purchased.push("Merino jodhpurs");
+            console.log(user)
         
-        // E.
-        // F.
-        // G.
-        //_____________________________________________________________
+        // E. Object-within-object
+
+        user.friend = {
+            name: "Grace Hopper",
+            age: 85,
+            location: "Miami",
+            purchased: [],
+        }
+        console.log(user.friend.name);
+        console.log(user.friend.location);
+        user.friend.age = 55;
+        user.purchased.push("The One Ring");
+        user.purchased.push("A latte");
+        console.log(user.friend.purchased[1]);
+
+        // F. Loops
+        /*    for (let i = 0; i < user.purchased.length; i++ ) {
+                console.log(user.purchased[i]);
+            }
+
+            for (let i = 0; i < user.purchased.length; i++ ) {
+                console.log(user.friend.purchased[i]);
+            }
+            */
+        // G. Functions can operate on objects
+        
+            function updateUser () {
+                user.age++;
+                user.name.toUpperCase();
+            }
+
+            
+            function oldAndLoud (person) {
+                user.age++;
+                user.name.toUpperCase();
+            }
+            oldAndLoud(user);
+        //____________________________________________________________
 
 
         // Extra
